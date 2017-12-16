@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="panel-default"></div>
+	<div class="panel panel-heading panel-default"><h2 align="center">Please insert your personal data:</h2></div>
+		<br><br><br>
+		<div class="row">
+ 			<div class="col-sm-5">
+ 				<div class="container-fluid">
+ 				<form action="Reservation.php" method="post" >
+				<div class="form-group">
+					<div>
+						<label for="name1">Firstname:</label>
+						<input type="text" class="form-control input-sm" id="name1" placeholder="Enter your firstname">
+						<br>
+						<label for="name2">Surname:</label>
+						<input type="text" class="form-control input-sm" id="name2" placeholder="Enter your surname">
+					</div>
+					<br><br>
+					Select date:
+					<select name="day">
+						<option value="one"> 1 </option>
+						<option value="two"> 2 </option>
+						<option value="three"> 3 </option>
+						<option value="four"> 4 </option>
+						<option value="five"> 5 </option>
+						<option value="six"> 6 </option>
+						<option value="seven"> 7 </option>
+						<option value="eight"> 8 </option>
+						<option value="nine"> 9 </option>
+						<option value="ten"> 10 </option>
+						<option value="eleven"> 11 </option>
+						<option value="twelve"> 12 </option>
+						<option value="thirteen"> 13 </option>
+						<option value="fourteen"> 14 </option>
+						<option value="fifteen"> 15 </option>
+						<option value="sixteen"> 16 </option>
+						<option value="seventeen"> 17 </option>
+						<option value="eighteen"> 18 </option>
+						<option value="nineteen"> 19 </option>
+						<option value="twenty"> 20 </option>
+						<option value="twentyone"> 21 </option>
+						<option value="twentytwo"> 22 </option>
+						<option value="twentythree"> 23 </option>
+						<option value="twentyfour"> 24 </option>
+						<option value="twentyfive"> 25 </option>
+						<option value="twentysix"> 26 </option>
+						<option value="twentyseven"> 27 </option>
+						<option value="twentyeight"> 28 </option>
+						<option value="twentynine"> 29 </option>
+						<option value="thirty"> 30 </option>
+						<option value="thirtyone"> 31 </option>
+					</select>
+					<select name="month">
+						<option value="april"> April </option>
+						<option value="may"> May </option>
+						<option value="june"> June </option>
+						<option value="july"> July </option>
+						<option value="august"> August </option>
+						<option value="september"> September </option>
+						<option value="october"> October </option>
+					</select>
+					<br><br>
+					Number of people:
+					<select name="people">
+						<option value="One"> 1 </option>
+						<option value="Two"> 2 </option>
+						<option value="Three"> 3 </option>
+						<option value="Four"> 4 </option>
+						<option value="Five"> 5 </option>
+						<option value="Six"> 6 </option>
+					</select>
+					<br><br>
+					<button type="submit" class="btn btn-success"> Ok </button>
+					<button type="reset" class="btn btn-default"> Cancel </button>
+				</div>		
+		</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
