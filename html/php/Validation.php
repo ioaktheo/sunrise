@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
 <?php
-
 $_SESSION ['firstname']=$POST['name1']
 $_SESSION ['surname']=$POST['name2']
 $_SESSION ['ar_date']=$POST['datepicker']
@@ -47,7 +40,4 @@ else
 //Departure date validation check
 $output = shell_exec('Reservation.php');
 echo "<pre>$output</pre>";
-
 ?>
-</body>
-</html>
