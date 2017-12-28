@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
 <?php
 
 $_SESSION ['firstname']=$POST['name1']
@@ -49,5 +43,3 @@ $output = shell_exec('Reservation.php');
 echo "<pre>$output</pre>";
 
 ?>
-</body>
-</html>
