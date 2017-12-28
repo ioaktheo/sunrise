@@ -1,9 +1,9 @@
 <?php
-$_SESSION ['firstname']=$POST['name1']
-$_SESSION ['surname']=$POST['name2']
-$_SESSION ['ar_date']=$POST['datepicker']
-$_SESSION ['dep_date']=$POST['datepicker2']
-$_SESSION ['num_people']=$POST['people']
+$_SESSION ['firstname']=$POST['name1'];
+$_SESSION ['surname']=$POST['name2'];
+$_SESSION ['ar_date']=$POST['datepicker'];
+$_SESSION ['dep_date']=$POST['datepicker2'];
+$_SESSION ['num_people']=$POST['people'];
 
 //Firstname validetion check
 if (empty($firstname) {
