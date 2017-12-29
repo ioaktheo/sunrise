@@ -1,7 +1,8 @@
 <?php
+	session_start();
 	mysql_connect('localhost', 'Ioakeim', 'Sunrise2017') or die ("Unable to connect to the Database.");
 	mysql_select_db('Sunrise') or die ("Unable to select the Database");
-
+	
 	$name=$_SESSION['firstname'];
 	$surname=$_SESSION['surname'];
 	$people=$_SESSION['num_people'];
