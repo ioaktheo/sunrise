@@ -1,7 +1,11 @@
 <?php
 	session_start();
-	mysql_connect('localhost', 'Ioakeim', 'Sunrise2017') or die ("Unable to connect to the Database.");
-	mysql_select_db('Sunrise') or die ("Unable to select the Database");
+
+	$conn = new mysqli("localhost", "Ioakeim", "Sunrise2017", "Sunrise");
+
+	if ($conn->connect_error){
+		die("ERROR: Unable to connect: ". $conn->connect_error);
+	}
 	
 	$name=$_SESSION['firstname'];
 	$surname=$_SESSION['surname'];
@@ -11,15 +15,15 @@
 	$ReservationDate=date_default_timezone_get();
 
 	$CustomerQuery="insert into Customer(Name, Surname) values (\"$name\", \"$surname\")";
-	mysql_query($CustomerQuery) or die ("Could not Insert Customer");
+	$result = $conn->query($CustomerQuery) or die ("Could not Insert Customer");
 
-	if(CustomerQuery){
-		$CustomerID=mysql_query('SELECT CustomerID FROM Customer ORDER BY CustomerID DESC LIMIT 1');
+	if($result){
+		$CustomerID=conn->query('SELECT CustomerID FROM Customer ORDER BY CustomerID DESC LIMIT 1');
 	}
 
 	$ReservationQuery="insert into Reservation(People, ReservationDate, ArrivalDate, DepartureDate, CustomerID) values (\"$people\", \"$ReservationDate\", \"$ArrivalDate\", \"$DepartureDate\", \"$CustomerID\")";
 	
-	mysql_query($ReservationQuery) or die ("Could not complete the Reservation");
+	$result = conn->query($ReservationQuery) or die ("Could not complete the Reservation");
 
 	mysql_close();
 ?>
