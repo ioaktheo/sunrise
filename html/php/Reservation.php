@@ -17,7 +17,7 @@
 	$result = mysqli_query($link, $CustomerQuery) or die ("Could not Insert Customer");
 
 	if(result){
-		$CustomerID=mysqli_query($link, "SELECT CustomerID FROM Customer ORDER BY CustomerID DESC LIMIT 1");
+		$CustomerID=mysqli_num_rows(mysqli_query($link, "SELECT CustomerID FROM Customer ORDER BY CustomerID DESC LIMIT 1"));
 	}
 
 	$ReservationQuery="insert into Reservation(People, ReservationDate, ArrivalDate, DepartureDate, CustomerID) values (\"$people\", \"$ReservationDate\", \"$ArrivalDate\", \"$DepartureDate\", \"$CustomerID\")";
