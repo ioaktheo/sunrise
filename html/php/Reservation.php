@@ -10,7 +10,7 @@
 	$DepartureDate=$_SESSION['dep_date'];
 	$ReservationDate=date_default_timezone_get();
 
-	$CustomerQuery="insert into Customer(Name, Surname) values (\"$name\", \"surname\")";
+	$CustomerQuery="insert into Customer(Name, Surname) values (\"$name\", \"$surname\")";
 	mysql_query($CustomerQuery) or die ("Could not Insert Customer");
 
 	if(CustomerQuery){
