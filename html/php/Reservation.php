@@ -8,7 +8,7 @@
 	
 	$name=$_SESSION['firstname'];
 	$surname=$_SESSION['surname'];
-	$people=$_SESSION['num_people'];
+	$people= 5;
 	$arrival_date=$_SESSION['ar_date'];
 	$departure_date=$_SESSION['dep_date'];
 	$reservation_date=date_default_timezone_get();
@@ -21,7 +21,7 @@
 	} else {
     	echo "Error: " . $customer_query . "<br>" . mysqli_error($connection);
 	}
-
+	
 	$reservation_query="insert into Reservation(People, ArrivalDate, DepartureDate, CustomerID) values (\"$people\", \"$arrival_date\", \"$departure_date\", \"$customer_id\")";
 	
 	if (mysqli_query($connection, $reservation_query)){
