@@ -10,10 +10,10 @@
 	$surname=htmlspecialchars($_POST["surname"]);
 
 	$temp_arrival_date=htmlspecialchars($_POST["ar_date"]);
- 	$arrival_date= $temp_arrival_date->format('Y-m-d H:i:s');
+ 	$arrival_date= createFromFormat('d.m.Y H:i:s', $temp_arrival_date)->format('Y-m-d h:i:s');
 
 	$temp_departure_date=htmlspecialchars($_POST["dep_date"]);
-	$departure_date=$temp_departure_date->format('Y-m-d H:i:s');
+	$departure_date=createFromFormat('d.m.Y H:i:s', $temp_departure_date)->format('Y-m-d h:i:s');
 
 	$people=htmlspecialchars($_POST["people"]);
 
