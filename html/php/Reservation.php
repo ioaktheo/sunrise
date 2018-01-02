@@ -22,7 +22,7 @@
     	echo "Error: " . $customer_query . "<br>" . mysqli_error($connection);
 	}
 
-	$reservation_query="insert into Reservation(People, ReservationDate, ArrivalDate, DepartureDate, CustomerID) values (\"$people\", \"$reservation_date\", \"arrival_date\", \"$departure_date\", \"$customer_id\")";
+	$reservation_query="insert into Reservation(People, ArrivalDate, DepartureDate, CustomerID) values (\"$people\", \"$arrival_date\", \"$departure_date\", \"$customer_id\")";
 	
 	if (mysqli_query($connection, $reservation_query)){
 		$reservation_id = mysqli_insert_id($connection);
