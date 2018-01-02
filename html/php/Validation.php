@@ -46,10 +46,10 @@ if ($ar_date>=$dep_date) {
 	$errors=TRUE;
 }
 
-if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
-	echo "Unavailable date!";
-	$errors=TRUE;
-}
+//if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
+//	echo "Unavailable date!<br>";
+//	$errors=TRUE;
+//}
 
 
 //Departure date validation check
@@ -64,10 +64,10 @@ if ($dep_date<=$ar_date) {
 	$errors=TRUE;
 }
 
-if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
-	echo "Unavailable date!";
-	$errors=TRUE;
-}
+//if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
+//	echo "Unavailable date!<br>";
+//	$errors=TRUE;
+//}
 
 
 //Sending data to Reservation.php
