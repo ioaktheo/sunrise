@@ -9,8 +9,8 @@
 	$name=$_SESSION['firstname'];
 	$surname=$_SESSION['surname'];
 	$people= 5;
-	$arrival_date=date_default_timezone_set();
-	$departure_date=date_default_timezone_set();
+	$arrival_date=date('2017-06-05 20:20:20');
+	$departure_date=date('2017-06-05 20:20:20');
 
 	$customer_query="insert into Customer(Name, Surname) values (\"$name\", \"$surname\")";
 
