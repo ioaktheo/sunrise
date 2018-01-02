@@ -1,5 +1,4 @@
 <?php
-include_once("Reservation.php");
 if (isset($_POST["firstname"]) && isset($_POST["surname"]) && isset($_POST["ar_date"]) && isset($_POST["dep_date"]) && isset($_POST["people"])) 
 {
 	$firstname=htmlspecialchars($_POST["firstname"]);
@@ -73,9 +72,10 @@ if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
 
 //Sending data to Reservation.php
 if (errors) {
-	die("Errors found!!!");
+	exit("Errors found!!!");
 }
 else{
+include_once("Reservation.php");
 $output = shell_exec('Reservation.php');
 echo "<pre>$output</pre>";
 }
