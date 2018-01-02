@@ -14,11 +14,11 @@
 
 	$customer_query="insert into Customer(Name, Surname) values (\"$name\", \"$surname\")";
 
-	$reservation_query="insert into Reservation(People, ArrivalDate, DepartureDate, CustomerID) values (\"$people\", \"$arrival_date\", \"$departure_date\", \"$customer_id\")";
-
 	if (mysqli_query($connection, $customer_query)) {
     	$customer_id = mysqli_insert_id($connection);
 
+    	$reservation_query="insert into Reservation(People, ArrivalDate, DepartureDate, CustomerID) values (\"$people\", \"$arrival_date\", \"$departure_date\", \"$customer_id\")";
+    	
     	if (mysqli_query($connection, $reservation_query)){
 			$reservation_id = mysqli_insert_id($connection);
 			echo "<h1 align=\"center\">Thank you for your reservation. Your Reservation ID is: " . $reservation_id."</h1><br><br>";
