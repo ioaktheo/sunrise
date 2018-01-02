@@ -36,7 +36,7 @@
 			echo "</head>";
 			echo "<body style=\"background-image:url(https://wallpaperlayer.com/img/2015/6/bikini-wallpaper-hd-8111-8427-hd-wallpapers.jpg)\">";
 			echo "<h1 align=\"left\">Thank you for your reservation.</h1>";
-			echo "<h2>Reservation ID: ".reservation_id."<br>Customer ID: ".customer_id."<br><h2>";
+			echo "<h2>Reservation ID: ".$reservation_id."<br>Customer ID: ".$customer_id."<br><h2>";
 			echo "</body>";
 			echo "</html>";
 		}else{
