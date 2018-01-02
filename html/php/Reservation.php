@@ -8,8 +8,13 @@
 
 	$name=htmlspecialchars($_POST["firstname"]);
 	$surname=htmlspecialchars($_POST["surname"]);
-	$arrival_date=htmlspecialchars($_POST["ar_date"]);
-	$departure_date=htmlspecialchars($_POST["dep_date"]);
+
+	$temp_arrival_date=htmlspecialchars($_POST["ar_date"]);
+ 	$arrival_date= $temp_arrival_date->format('Y-m-d h:i:s');
+
+	$temp_departure_date=htmlspecialchars($_POST["dep_date"]);
+	$departure_date=$temp_departure_date->format('Y-m-d h:i:s');
+	
 	$people=htmlspecialchars($_POST["people"]);
 
 	$customer_query="insert into Customer(Name, Surname) values (\"$name\", \"$surname\")";
