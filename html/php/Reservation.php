@@ -1,28 +1,36 @@
 <?php
 	session_start();
-	$link = mysqli_connect("localhost", "Ioakeim", "Sunrise2017", "Sunrise"); 
+	$connection = mysqli_connect("localhost", "Ioakeim", "Sunrise2017", "Sunrise"); 
 	
-	if($link == false){
-		die("ERROR: Could not connect.".mysqli_connect_error());
+	if($connection == false){
+		die("Connection failed: ".mysqli_connect_error());
 	}
 	
 	$name=$_SESSION['firstname'];
 	$surname=$_SESSION['surname'];
 	$people=$_SESSION['num_people'];
-	$ArrivalDate=$_SESSION['ar_date'];
-	$DepartureDate=$_SESSION['dep_date'];
-	$ReservationDate=date_default_timezone_get();
+	$arrival_date=$_SESSION['ar_date'];
+	$departure_date=$_SESSION['dep_date'];
+	$reservation_date=date_default_timezone_get();
 
-	$CustomerQuery="insert into Customer(Name, Surname) values (\"$name\", \"$surname\")";
-	$result = mysqli_query($link, $CustomerQuery) or die ("Could not Insert Customer");
+	$customer_query="insert into Customer(Name, Surname) values (\"$name\", \"$surname\")";
 
-	if(result){
-		$CustomerID=mysqli_num_rows(mysqli_query($link, "SELECT CustomerID FROM Customer ORDER BY CustomerID DESC LIMIT 1"));
+	if (mysqli_query($connection, $customer_query)) {
+    	$customer_id = mysqli_insert_id($connection);
+    	echo "You can return again by using this customer ID: " . $customer_id;
+	} else {
+    	echo "Error: " . $customer_query . "<br>" . mysqli_error($connection);
 	}
 
-	$ReservationQuery="insert into Reservation(People, ReservationDate, ArrivalDate, DepartureDate, CustomerID) values (\"$people\", \"$ReservationDate\", \"$ArrivalDate\", \"$DepartureDate\", \"$CustomerID\")";
+	$reservation_query="insert into Reservation(People, ReservationDate, ArrivalDate, DepartureDate, CustomerID) values (\"$people\", \"$reservation_date\", \"arrival_date\", \"$departure_date\", \"$customer_id\")";
 	
-	mysqli_query($link, $ReservationQuery) or die ("Could not complete the Reservation");
+	if (mysqli_query($connection, $reservation_query)){
+		$reservation_id = mysqli_insert_id($connection);
+		echo "Thank you for your reservation. Your Reservation ID is: " . $reservation_id;
 
-	mysqli_close($link);
+	}else{
+	 	echo "Error: " . $reservation_query . "<br>" . mysqli_error($connection);
+	}
+
+	mysqli_close($connection);
 ?>
