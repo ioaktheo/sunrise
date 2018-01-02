@@ -48,7 +48,7 @@ if ($ar_date>=$dep_date) {
 
 //if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
 //	echo "Unavailable date!<br>";
-//	$errors=TRUE;
+//	$errors=True;
 //}
 
 
@@ -66,12 +66,12 @@ if ($dep_date<=$ar_date) {
 
 //if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
 //	echo "Unavailable date!<br>";
-//	$errors=TRUE;
+//	$errors=True;
 //}
 
 
 //Sending data to Reservation.php
-if (errors==True) {
+if ($errors==True) {
 	exit("Errors found!!!");
 }
 else{
