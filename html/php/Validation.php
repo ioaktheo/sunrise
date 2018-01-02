@@ -71,7 +71,7 @@ if ($dep_date<=$ar_date) {
 
 
 //Sending data to Reservation.php
-if (errors) {
+if (errors==TRUE) {
 	exit("Errors found!!!");
 }
 else{
