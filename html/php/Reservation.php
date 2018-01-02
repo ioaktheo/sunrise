@@ -10,11 +10,11 @@
 	$surname=htmlspecialchars($_POST["surname"]);
 
 	$temp_arrival_date=htmlspecialchars($_POST["ar_date"]);
- 	$arrival_date= $temp_arrival_date->format('Y-m-d h:i:s');
+ 	$arrival_date= $temp_arrival_date->format('Y-m-d H:i:s');
 
 	$temp_departure_date=htmlspecialchars($_POST["dep_date"]);
-	$departure_date=$temp_departure_date->format('Y-m-d h:i:s');
-	
+	$departure_date=$temp_departure_date->format('Y-m-d H:i:s');
+
 	$people=htmlspecialchars($_POST["people"]);
 
 	$customer_query="insert into Customer(Name, Surname) values (\"$name\", \"$surname\")";
