@@ -34,9 +34,9 @@ if (empty($ar_date)) {
 if ($ar_date>=$dep_date) {
 	echo "Arrival date must be before departure date!<br>";	
 }
-//if (($ar_date<1/4) || ($ar_date>30/10)) {
-//	echo "Unavailable date!";
-//}
+if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
+	echo "Unavailable date!";
+}
 
 //Departure date validation check
 
@@ -46,9 +46,9 @@ if (empty($dep_date)) {
 if ($dep_date<=$ar_date) {
 	echo "Departure date must be after arrival date!<br>";	
 }
-//if (($dep_date<1/4) || ($dep_date>30/10)) {
-//	echo "Unavailable date!";
-//}
+if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
+	echo "Unavailable date!";
+}
 
 //Sending data to Reservation.php
 $output = shell_exec('Reservation.php');
