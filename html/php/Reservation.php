@@ -23,8 +23,8 @@
 			$reservation_id = mysqli_insert_id($connection);
 			echo "<html>"
 			echo "<body style=\"background-color: 	#FFFACD\";>"
-			echo "<h1 align=\"center\" style=\"color: #FF8C00\">Thank you for your reservation. Your Reservation ID is: " . $reservation_id."</h1><br><br>";
-			echo "<h2 align=\"center\" style=\"color: #FF8C00\">You can return again by using this customer ID: " .$customer_id."</h2>";
+			echo "<h1 align=\"center\">Thank you for your reservation. Your Reservation ID is: " . $reservation_id."</h1><br><br>";
+			echo "<h2 align=\"center\">You can return again by using this customer ID: " .$customer_id."</h2>";
 			echo "</body>"
 			echo "</html>"
 		}else{
