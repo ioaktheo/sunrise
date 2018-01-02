@@ -21,24 +21,24 @@
     	
     	if (mysqli_query($connection, $reservation_query)){
 			$reservation_id = mysqli_insert_id($connection);
-			echo"<!DOCTYPE html>"
-			echo "<html>"
-			echo "<head>"
-			echo "<style>"
-			echo "body{"
-			echo "background-size: cover;"
-			echo "background-repeat: no-repeat;"
-			echo "}"
-			echo "h1,h2 {"
-    		echo "color: white;"
-			echo "}"
-			echo "</style>"
-			echo "</head>"
-			echo "<body style=\"background-image:url(https://wallpaperlayer.com/img/2015/6/bikini-wallpaper-hd-8111-8427-hd-wallpapers.jpg)\">"
-			echo "<h1 align=\"left\">Thank you for your reservation.</h1>"
-			echo "<h2>Reservation ID: ".reservation_id."<br>Customer ID: ".customer_id."<br><h2>"
-			echo "</body>"
-			echo "</html>"
+			echo"<!DOCTYPE html>";
+			echo "<html>";
+			echo "<head>";
+			echo "<style>";
+			echo "body{";
+			echo "background-size: cover;";
+			echo "background-repeat: no-repeat;";
+			echo "}";
+			echo "h1,h2 {";
+    		echo "color: white;";
+			echo "}";
+			echo "</style>";
+			echo "</head>";
+			echo "<body style=\"background-image:url(https://wallpaperlayer.com/img/2015/6/bikini-wallpaper-hd-8111-8427-hd-wallpapers.jpg)\">";
+			echo "<h1 align=\"left\">Thank you for your reservation.</h1>";
+			echo "<h2>Reservation ID: ".reservation_id."<br>Customer ID: ".customer_id."<br><h2>";
+			echo "</body>";
+			echo "</html>";
 		}else{
 	 		echo "Error: " . $reservation_query . "<br>" . mysqli_error($connection);
 		}
