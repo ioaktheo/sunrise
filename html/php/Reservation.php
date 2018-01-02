@@ -8,8 +8,8 @@
 
 	$name=htmlspecialchars($_POST["firstname"]);
 	$surname=htmlspecialchars($_POST["surname"]);
-	$arrival_date=htmlspecialchars($_POST["ar_date"]. 12:00:00);
-	$departure_date=htmlspecialchars($_POST["dep_date"]. 12:00:00);
+	$arrival_date=htmlspecialchars($_POST["ar_date"]);
+	$departure_date=htmlspecialchars($_POST["dep_date"]);
 	$people=htmlspecialchars($_POST["people"]);
 
 	$customer_query="insert into Customer(Name, Surname) values (\"$name\", \"$surname\")";
