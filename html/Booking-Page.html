@@ -36,11 +36,7 @@
     	text-align: center;
 		}
 
-		h2{
-			color: #A0522D;
-		}
-
-		h1{
+		h1,h2,.fontcolor{
 			color: #A0522D;
 		}
 
@@ -50,6 +46,11 @@
   </style>
 
 <body style="background-color: 	#FFFACD";>
+	<!--Page header-->
+	<div class="head">
+		<img class="img-responsive" src="src/images/header.JPG">
+	</div>
+	<!--Page Navbar-->
 	<nav class="navbar navbar-default" >
   		<div class="container-fluid">
   			<!-- Logo -->
@@ -74,7 +75,7 @@
 	    	</div>
 	    </div>
  	</nav>
- 			<!--Page header-->
+ 			<!--Page Title-->
  		<div class="row" style="background-color: #FFDAB9">
  			<div class="col-sm-center">
  				<div class="container-fluid">
@@ -89,7 +90,7 @@
  				<div class="container-fluid">
 					<br>
 					<table class="table table-striped"> 
-						<tr>
+						<tr style="background-color: #ffffb3">
 							<th> Months </th> 
 							<th> Prices </th>
 						</tr>
@@ -97,7 +98,7 @@
 							<td> April,May,June,September and October </td>
 							<td> 80 euros per night </td>
 						</tr>
-						<tr>
+						<tr style="background-color: #ffffb3">
 							<td> July and August </td>
 							<td> 100 euros per night </td>
 						</tr>
@@ -106,14 +107,19 @@
 			</div>
 		</div>
 		<!--Booking and Contact information-->
-		<br><br>
+		<br>
 		<div class="row">
  			<div class="col-sm-6">
  				<div class="container-fluid">
-					<div class="page-header"><h2><u>Available Dates for Reservation</u></h2></div> 
+					<div class="page-header"><h2><u>Booking Information</u></h2></div> 
 					<div style="background-color: #FFDAB9" class="jumbotron">
-						<img class="lead" src="C:\Users\Γιώργος & Γιαννής\Desktop\december.png" width="350" height="200">
-						<br><br>
+						<form action="ReservationCheck.php" method="post">
+							<label class="fontcolor">Check your Reservation</label>
+							<input type="text" class="form-control input-sm" name=reservation_id" placeholder="Reservation ID">
+							<br>					
+							<button type="submit" class="btn-sm btn-warning">Check Reservation</button>
+						</form>
+						<br>
 						<a class="lead" href="BookingForm.html">Book Now!!!</a>
 					</div>
 				</div>
