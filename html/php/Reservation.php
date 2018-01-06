@@ -46,13 +46,15 @@
 			echo "<th>Status</th>";
 			echo "</tr>";
 			echo "</thead>";
+			echo "<tbody>";
 			echo "<tr>";
 			echo "<td class=\"success\">".$reservation_id."</td>";
 			echo "<td class=\"info\">".$customer_id."</td>";
 			echo "<td class=\"warning\">Pending</td>";
 			echo "</tr>";
+			echo "</tbody>";
 			echo "</table";
-			echo "/div>";
+			echo "</div>";
 			echo "</body>";
 			echo "</html>";
 		}else{
