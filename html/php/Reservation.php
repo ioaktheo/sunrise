@@ -36,7 +36,7 @@
 			echo "<div class=\"head\">";
 			echo "<img class=\"img-responsive\" src=\"/src/images/header.JPG\">";
 			echo "</div><br>";
-			echo "<h1 align=\"center\">Thank you for your reservation.</h1><br>";
+			//echo "<h1 align=\"center\">Thank you for your reservation.</h1><br>";
 			echo "<table align=\"center\" class=\"table\">";
 			echo "<tr class=\"warning\">";
 			echo "<th>Reservation ID</th>";
