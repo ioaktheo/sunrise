@@ -47,7 +47,7 @@ if ($ar_date>=$dep_date) {
 }
 
 if (($ar_date<"04/01/2018") || ($ar_date>"10/31/2018")) {
-	echo "Unavailable date!<br>";
+	echo "Unavailable arrival date!<br>";
 	$errors=True;
 }
 
@@ -64,8 +64,8 @@ if ($dep_date<=$ar_date) {
 	$errors=True;
 }
 
-if (($ar_date<"04/01/2018") || ($ar_date>"10/31/2018")) {
-	echo "Unavailable date!<br>";
+if (($dep_date<"04/01/2018") || ($dep_date>"10/31/2018")) {
+	echo "Unavailable departure date!<br>";
 	$errors=True;
 }
 
