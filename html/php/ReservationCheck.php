@@ -1,5 +1,5 @@
 <?php
-$connection = mysqli_connect("localhost", "George", "Sunrise2017", "Sunrise"); 
+$connection = mysqli_connect("localhost", "Ioakeim", "Sunrise2017", "Sunrise"); 
 	
 	if($connection == false){
 		die("Connection failed: ".mysqli_connect_error());
