@@ -32,13 +32,13 @@
 			echo "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>";
 			echo "<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js\"></script>";
 			echo "</head>";
-			echo "<body style=\"background-color: 	#FFFACD\";>";
+			echo "<body style=\"background-color:#FFFACD\">";
 			echo "<div class=\"head\">";
 			echo "<img class=\"img-responsive\" src=\"/src/images/header.JPG\">";
 			echo "</div><br>";
 			echo "<div class=\"container\">";
 			echo "<h1 align=\"center\">Thank you for your reservation.</h1><br>";
-			echo "<table align=\"center\" class=\"table\">";
+			echo "<table class=\"table\">";
 			echo "<thead>";
 			echo "<tr class=\"active\">";
 			echo "<th>Reservation ID</th>";
