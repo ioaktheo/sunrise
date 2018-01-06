@@ -49,7 +49,7 @@
 			echo "<tbody>";
 			echo "<tr>";
 			echo "<td class=\"success\">".$reservation_id."</td>";
-			echo "<td class=\"success\">".$customer_id."</td>";
+			echo "<td class=\"info\">".$customer_id."</td>";
 			echo "<td class=\"warning\">Pending</td>";
 			echo "</tr>";
 			echo "</tbody>";
