@@ -77,6 +77,5 @@ if ($errors==True) {
 else{
 include_once("Reservation.php");
 $output = shell_exec('Reservation.php');
-echo "<pre>$output</pre>";
 }
 ?>
