@@ -36,13 +36,16 @@
 			echo "<div class=\"head\">";
 			echo "<img class=\"img-responsive\" src=\"/src/images/header.JPG\">";
 			echo "</div><br>";
-			//echo "<h1 align=\"center\">Thank you for your reservation.</h1><br>";
+			echo "<div class=\"container\">";
+			echo "<h1 align=\"center\">Thank you for your reservation.</h1><br>";
 			echo "<table align=\"center\" class=\"table\">";
+			echo "<thead>";
 			echo "<tr class=\"warning\">";
 			echo "<th>Reservation ID</th>";
 			echo "<th>Customer ID</th>";
 			echo "<th>Status</th>";
 			echo "</tr>";
+			echo "</thead>";
 			echo "<tbody>";
 			echo "<tr class=\"warning\">";
 			echo "<td>".$reservation_id."</td>";
@@ -51,6 +54,7 @@
 			echo "</tr>";
 			echo "</tbody>";
 			echo "</table";
+			echo "/div>";
 			echo "</body>";
 			echo "</html>";
 		}else{
