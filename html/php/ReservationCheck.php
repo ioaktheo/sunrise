@@ -27,7 +27,7 @@ $connection = mysqli_connect("localhost", "George", "Sunrise2017", "Sunrise");
 	echo "<h2>Your Reservation Informnation:</h2>";
 	echo "<br><br>";
 	echo "<table><tr><th>Reservation ID</th><th>Firstname</th><th>Surname</th><th>Number of people</th><th>Arrival Date</th><th>Departure Date</th></tr>";
-	echo "<tr><td>".$res_id"</td><td>".$name"</td><td>".$surname"</td><td>".$people"</td><td>".$arr_date"</td><td>".$dep_date"</td></tr></table>";
+	echo "<tr><td>".$res_id."</td><td>".$name."</td><td>".$surname."</td><td>".$people."</td><td>".$arr_date."</td><td>".$dep_date."</td></tr></table>";
 	echo "</body>";
 	echo "</html>";
 	}
