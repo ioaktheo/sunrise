@@ -38,7 +38,7 @@
 			echo "</div><br>";
 			echo "<h1 align=\"center\">Thank you for your reservation.</h1><br>";
 			echo "<table align=\"center\" class=\"table\">";
-			echo "<tr>";
+			echo "<tr class=\"warning\">";
 			echo "<th>Reservation ID</th>";
 			echo "<th>Customer ID</th>";
 			echo "<th>Status</th>";
