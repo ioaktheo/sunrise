@@ -32,7 +32,7 @@
 			echo "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js\"></script>";
 			echo "<script src=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js\"></script>";
 			echo "</head>";
-			echo "<body>";
+			echo "<body style=\"background-color: 	#FFFACD\";>";
 			echo "<div class=\"head\">";
 			echo "<img class=\"img-responsive\" src=\"/src/images/header.JPG\">";
 			echo "</div>";
