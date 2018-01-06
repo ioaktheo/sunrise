@@ -5,7 +5,7 @@ $connection = mysqli_connect("localhost", "Ioakeim", "Sunrise2017", "Sunrise");
 		die("Connection failed: ".mysqli_connect_error());
 	}
 	if (isset($_POST["reservation_id"])) {
-		$res_id=htmlspecialchars($_POST["reservation_id"]);
+		$res_id=$_POST["reservation_id"];
 	}
 		$data_query="SELECT Name,Surname,People,ArrivalDate,DepartureDate FROM Customer,Reservation WHERE CustomerID=ReservationID.CustomerID AND ReservationID=".$res_id;
 	
