@@ -3,8 +3,8 @@ if (isset($_POST["firstname"]) && isset($_POST["surname"]) && isset($_POST["ar_d
 {
 	$firstname=htmlspecialchars($_POST["firstname"]);
 	$surname=htmlspecialchars($_POST["surname"]);
-	$ar_date=htmlspecialchars($_POST["ar_date"]);
-	$dep_date=htmlspecialchars($_POST["dep_date"]);
+	$ar_date=date_create($_POST["ar_date"]);
+	$dep_date=date_create($_POST["dep_date"]);
 	$num_people=htmlspecialchars($_POST["people"]);
 }
 
@@ -46,10 +46,10 @@ if ($ar_date>=$dep_date) {
 	$errors=True;
 }
 
-//if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
-//	echo "Unavailable date!<br>";
-//	$errors=True;
-//}
+if (($ar_date<"04/01/2018") || ($ar_date>"10/31/2018")) {
+	echo "Unavailable arrival date!<br>";
+	$errors=True;
+}
 
 
 //Departure date validation check
@@ -64,10 +64,10 @@ if ($dep_date<=$ar_date) {
 	$errors=True;
 }
 
-//if (($ar_date<"2018-04-1") || ($ar_date>"2018-10-30")) {
-//	echo "Unavailable date!<br>";
-//	$errors=True;
-//}
+if (($dep_date<"04/01/2018") || ($dep_date>"10/31/2018")) {
+	echo "Unavailable departure date!<br>";
+	$errors=True;
+}
 
 
 //Sending data to Reservation.php
