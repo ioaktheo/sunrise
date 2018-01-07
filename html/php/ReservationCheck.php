@@ -14,7 +14,7 @@ $connection = mysqli_connect("localhost", "Ioakeim", "Sunrise2017", "Sunrise");
 		$people=$row["People"];
 		$arr_date=$row["ArrivalDate"];
 		$dep_date=$row["DeprtureDate"];
-		echo "!DOCTYPE html";
+		echo "<!DOCTYPE html>";
 		echo "<html>";
 		echo "<head>";
 		echo "<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css\">";
@@ -46,7 +46,7 @@ $connection = mysqli_connect("localhost", "Ioakeim", "Sunrise2017", "Sunrise");
 		echo "</html>";
 	}
 	else{
-		echo "!DOCTYPE html";
+		echo "<!DOCTYPE html>";
 		echo "<html>";
 		echo "<head>";
 		echo "<link rel=\"stylesheet\" href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css\">";
@@ -57,7 +57,7 @@ $connection = mysqli_connect("localhost", "Ioakeim", "Sunrise2017", "Sunrise");
 		echo "<div class=\"container\">";
 		echo "<br>";
 		echo "<h2 align=\"center\" style=\"color:#A0522D;\">Error:The Reservation ID you inserted is incorrect!!!</h2>";
-		echo "br";
+		echo "<br>";
 		echo "<h2 align=\"center\" style=\"color:#A0522D;\">Please enter a valid Reservation ID.</h2>";
 		echo "</div>";
 		echo "</body>";
