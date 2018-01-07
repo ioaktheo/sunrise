@@ -1,10 +1,9 @@
 <?php
 echo "<!DOCTYPE html>";
 echo "<html>";
+echo "<head>";
+echo "</head>";
 echo "<body style=\"background-color:#FFFACD\">";
-echo "<div class=\"head\">";
-echo "<img class=\"img-responsive\" src=\"/src/images/header.JPG\">";
-echo "</div><br>";
 if (isset($_POST["firstname"]) && isset($_POST["surname"]) && isset($_POST["ar_date"]) && isset($_POST["dep_date"]) && isset($_POST["people"])) 
 {
 	$firstname=htmlspecialchars($_POST["firstname"]);
