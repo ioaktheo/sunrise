@@ -1,2 +1,2 @@
 # sunrise
-This repository contains a website that is going to be hosted at www.villasunrise.gr.
+This repository contains a website that includes a reservation system for a villa.
