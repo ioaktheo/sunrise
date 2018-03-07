@@ -4,12 +4,13 @@ A simple reservation system that is based on booking your holiday at Villa Sunri
 
 ## Getting Started
 
-Step 1: Clone the repository.
+Step 1: 
 git clone https://github.com/ioaktheo/sunrise.git
 
-Step 2: Open up the html/Home-Page.html
+Step 2: 
+Open up the html/Home-Page.html
 
-Step 3: To make a reservation you should go to Bookings and Pricining page and click the "Book Now" button.
+Step 3: To make a reservation go to Bookings and Pricining page and click the "Book Now" button.
 
 ### Prerequisites
 
