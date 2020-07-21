@@ -1,6 +1,6 @@
 # Sunrise
 
-A simple reservation system that is based on booking your holiday at Villa Sunrise located in Corfu.  
+A simple reservation system that is based on booking your holiday.  
 
 ## Getting Started
 
